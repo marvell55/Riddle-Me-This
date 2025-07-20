@@ -1,12 +1,47 @@
-# React + Vite
+# Riddle Me This
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Riddle Me This** is a riddles game that combines both fun and decentralization.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Fetches random riddles from an online API.
+- Interactive UI built with React and Tailwind CSS.
+- Users can submit answers, get hints, and see their score.
+- Limited guesses per riddle and feedback for each attempt.
+- Option to reveal the answer after failed attempts.
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Install dependencies:
+
+   ```sh
+   npm install
+   ```
+
+2. Start the development server:
+
+   ```sh
+   npm run dev
+   ```
+
+3. Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## Project Structure
+
+- `src/App.jsx`: Main game logic and UI.
+- `src/main.jsx`: Entry point for React.
+- `src/index.css`: Tailwind CSS setup.
+- `public/`: Static assets.
+
+## Future Updates
+
+- Add user authentication and persistent scores.
+- Leaderboard to compare scores globally.
+- Support for custom riddles and user submissions.
+- Timer for each riddle to increase challenge.
+- Sound effects and animations for correct/incorrect answers.
+- Mobile-friendly enhancements.
+- Localization for multiple languages.
+- Offline mode with a local riddle database.
+
+##
