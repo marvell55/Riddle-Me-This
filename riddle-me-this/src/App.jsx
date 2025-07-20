@@ -136,17 +136,15 @@ export default function App() {
                 .feedback { transition: all 0.5s ease-in-out; }
             `}</style>
 
-      <div className="card w-full max-w-lg p-6 md:p-10 text-center dark:bg-gray-800 relative">
+      <div className="card w-full max-w-lg p-6 md:p-10 text-center  relative">
         <header className="mb-8">
-          <h1 className="kalam-font text-4xl md:text-5xl font-bold text-indigo-600 dark:text-indigo-400">
+          <h1 className="kalam-font text-4xl md:text-5xl font-bold text-indigo-600 ">
             Riddle Me This!
           </h1>
-          <p className="text-gray-500 dark:text-gray-400 mt-2">
-            Test your wit and wisdom.
-          </p>
+          <p className="text-gray-500  mt-2">Test your wit and wisdom.</p>
         </header>
 
-        <div className="absolute top-4 right-4 bg-indigo-100 text-indigo-800 text-lg font-semibold px-4 py-2 rounded-full dark:bg-indigo-900 dark:text-indigo-200">
+        <div className="absolute bottom-4 right-4 bg-indigo-100 text-indigo-800 text-lg font-semibold px-4 py-2 rounded-full ">
           Score: <span>{score}</span>
         </div>
 
@@ -154,7 +152,7 @@ export default function App() {
           {isLoading ? (
             <Spinner />
           ) : (
-            <p className="text-xl md:text-2xl font-semibold text-gray-800 dark:text-gray-200">
+            <p className="text-xl md:text-2xl font-semibold text-gray-800 ">
               {riddle?.riddle}
             </p>
           )}
@@ -169,7 +167,7 @@ export default function App() {
               onKeyPress={handleKeyPress}
               placeholder="Your answer..."
               disabled={isAnswered || isLoading || guessCount >= 3}
-              className="w-full px-4 py-3 text-lg border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:placeholder-gray-400 disabled:opacity-50"
+              className="w-full px-4 py-3 text-lg border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent disabled:opacity-50"
             />
           </div>
 
@@ -198,7 +196,7 @@ export default function App() {
 
           {/* Hint Display Area */}
           {hint && !isAnswered && (
-            <div className="mb-4 text-yellow-600 dark:text-yellow-400 font-semibold">
+            <div className="mb-4 text-yellow-600  font-semibold">
               <p>{hint}</p>
             </div>
           )}
@@ -217,7 +215,7 @@ export default function App() {
               <button
                 type="button"
                 onClick={handleNextRiddle}
-                className="btn w-full sm:w-auto bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-3 px-8 rounded-lg text-lg dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-gray-200"
+                className="btn w-full sm:w-auto bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-3 px-8 rounded-lg text-lg "
               >
                 Next Riddle
               </button>
