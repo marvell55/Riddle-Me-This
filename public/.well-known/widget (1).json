@@ -1,0 +1,15 @@
+{
+  "pubkey": "d98d0ad536417fe78145d780022d1354b8664ae0ee032c1f70b81658aba8078d",
+  "widget": {
+    "title": "Riddle Me This",
+    "appUrl": "https://riddle-me-this-zeta.vercel.app/",
+    "iconUrl": "https://image.nostr.build/94922dd63a840ba85ab8c7967d2cbeac7368b7b2bdb41cf9c1f076350c090993.jpg",
+    "imageUrl": "https://image.nostr.build/38cf6a4fe8ee4a6d0f0a8768edcf4386567ccaaa3497f071a3c2b308bac86943.png",
+    "buttonTitle": "Riddle Me This",
+    "tags": [
+      "game",
+      "fun",
+      "riddles"
+    ]
+  }
+}
